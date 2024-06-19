@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Calculator Suhu</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="card-left">
+                    <div class="reverse">
+
+                        <button id="reverseButton">reverse</button>
+                    </div>
+                    <header>
+                        <h1>KALKULATOR SUHU</h1>
+                        <p>Masukkan Suhu dalam ke kotak dibawah, lalu
+                            klik tombol "convert" untuk mendapatkan hasil konversinya</p>
+                    </header>
+            
+                        <div class="insert-section">
+                            <p id="celsiusLabel">Celsius(&deg;C):
+                                <input type="number" id="celsiusInput" name="celsius"></input>
+                            </p>
+                            <p id="fahrenheitLabel">Fahrenheit(&deg;F):
+                                <input type="number" id="fahrenheitInput" readonly></input>
+                            </p>
+                        </div>
+                        <div class="button-section">
+                            <button id="convertButton">convert</button>
+                            <button id="resetButton">reset</button>
+                        </div>
+                </div>
+
+                <div class="card-right">
+
+                        <div class="calculate">
+                            <p>CARA KALKULASI</p>
+                            <textarea name="calculate" id="calculationText" readonly></textarea>
+                        </div>
+    
+                        <div class="info">
+                            <h2>CARA KONVERSI</h2>
+                            <p id="conversionInfo"></p>
+                            <div class="formula">
+                                <p id="formulaText"></p>
+                            </div>    
+                        </div>
+    
+                </div>
+
+            </div>
+            <footer>
+                <p align="center" >Copyright &copy; Indah Mutiara</p>
+            </footer>    
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
